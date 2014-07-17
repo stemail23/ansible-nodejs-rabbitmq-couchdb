@@ -1,0 +1,9 @@
+---
+- hosts: nodejs
+  sudo: yes
+  roles:
+    - common
+    - nodejs
+    - forever
+    - couchdb
+    - rabbitmq

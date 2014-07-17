@@ -1,0 +1,6 @@
+---
+- name: install couchdb
+  apt: name=couchdb state=latest
+
+- name: start couchdb service
+  service: name=couchdb state=running

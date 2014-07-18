@@ -1,5 +1,5 @@
 ---
-- hosts: nodejs
+- hosts: test
   sudo: yes
   roles:
     - common

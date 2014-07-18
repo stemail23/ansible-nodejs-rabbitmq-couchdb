@@ -2,5 +2,10 @@
 - name: install couchdb
   apt: name=couchdb state=latest
 
+- name: configure couchdb
+  template: src=local.ini dest=/etc/couchdb
+  notify:
+  - restart couchdb
+
 - name: start couchdb service
   service: name=couchdb state=running

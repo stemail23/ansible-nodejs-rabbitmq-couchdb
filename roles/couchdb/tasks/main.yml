@@ -8,4 +8,4 @@
   - restart couchdb
 
 - name: start couchdb service
-  service: name=couchdb state=running
+  service: name=couchdb state=running enable=yes
